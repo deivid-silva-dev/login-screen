@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+/* cores:
+    verdinho: #4AA19B
+    outro verde: #2F4D44
+*/
+
+:root {
+    --button1: #4AA19B;
+    --button2: #2F4D44;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: rgb(254, 254, 254);
+    height: 72%;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 15px;
+    margin: 10px;
+    margin-bottom: 25px;
+    
+}
+
+.image {
+    width: 100%;
+    background-image: url(../images/building.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+.form {
+    width: 70%;
+    margin: auto;
+}
+
+.email {
+    background-color: purple;
+    padding: 3px 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 130%;
+    margin-left: -15%;
+}
+
+.email input {
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    background-color: lightblue;
+    color: black;
+    border-color: transparent;
+    width: 85%;
+}
+
+.email input:focus {
+    background-color: white;
+    border: 1px solid purple;
+}
+
+.email input::placeholder {
+    color: gray;
+    padding-left: 5px;
+}
+
+.password {
+    background-color: purple;
+    padding: 3px 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 130%;
+    margin-left: -15%;
+}
+
+.password input {
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    background-color: lightblue;
+    color: black;
+    border-color: transparent;
+    width: 85%;
+}
+
+.password input:focus {
+    background-color: white;
+    border: 1px solid purple;
+}
+
+.password input::placeholder {
+    color: gray;
+    padding-left: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.join {
+    background-color: var(--button1);
+    color: white;
+    width: 130%;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #286c58c3;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.forgot-password {
+    background-color: white;
+    color: var(--button2);
+    width: 130%;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid var(--button2);
+    font-size: 15px;
+    font-weight: bold;
+    gap: 10px;
+}
