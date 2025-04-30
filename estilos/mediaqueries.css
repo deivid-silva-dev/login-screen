@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* media queries
+    smartphones and smallst tablets: <= 768px
+    tablets and small laptops: > 768px and <= 992px
+    large devices: > 992px
+*/
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    html, body {
+        background-image: linear-gradient(to top, rgb(19, 118, 113), rgb(138, 7, 138));
+    }
+    
+    .container {
+        width: 80vw;
+        height: 450px;
+        gap: 30px;
+    }
+
+    .image {
+        float: left;
+        width: 30%;
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+    }
+
+
+    .form {
+        float: right;
+        width: 70%;
+        margin-top: 40px;
+    }
+
+    .form input {
+        width: 80%;
+    }
+
+    .email { 
+        width: 45vw;
+        margin-left: 30px;
+    }
+
+    .password { 
+        width: 45vw;
+        margin-left: 30px;
+    }
+
+
+    .join {
+        width: 80%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .forgot-password {
+        width: 80%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    p {
+        font-size: 15px;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 45px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    html, body {
+        background-image: linear-gradient(to top, rgb(19, 118, 113), rgb(138, 7, 138))
+    }
+    
+    .container {
+        width: 950px;
+        height: 500px;
+    }
+
+    .image {
+        float: right;
+        width: 50%;
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+    }
+
+
+    .form {
+        float: left;
+        width: 50%;
+        margin-top: 40px;
+    }
+
+
+    .form input {
+        width: 80%;
+    }
+
+    .email { 
+        width: 80%;
+        margin-left: 50px;
+    }
+
+    .password { 
+        width: 80%;
+        margin-left: 50px;
+    }
+
+    .join {
+        width: 80%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .forgot-password {
+        width: 80%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
